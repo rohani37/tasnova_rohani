@@ -1,0 +1,127 @@
+/* General layout */
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background-color: #f7fbff;
+  color: #333;
+}
+
+/* Header and navigation */
+header {
+  background-color: #e3f3ff;
+  text-align: center;
+  padding: 1em;
+  border-bottom: 2px solid #b3d9ff;
+}
+.logo {
+  width: 60px;
+  vertical-align: middle;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav li {
+  display: inline-block;
+  margin: 0.5em;
+}
+nav a {
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: bold;
+}
+nav a.active, nav a:hover {
+  color: #004080;
+}
+
+/* Hero and sections */
+.hero img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.hero-text {
+  text-align: center;
+  padding: 1em;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.gallery img {
+  width: 30%;
+  max-width: 250px;
+  border-radius: 10px;
+}
+
+/* Reviews */
+.reviews {
+  background: #f0f8ff;
+  padding: 1.5em;
+  margin: 1em;
+  border-radius: 10px;
+}
+blockquote {
+  font-style: italic;
+  margin: 0.8em 0;
+}
+
+/* Staff cards */
+.staff-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 1em;
+}
+.staff-card {
+  background: white;
+  padding: 1em;
+  border-radius: 15px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  width: 220px;
+  text-align: center;
+}
+.staff-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Contact */
+.contact img {
+  width: 80%;
+  max-width: 400px;
+  display: block;
+  margin: 1em auto;
+}
+.service-img {
+  width: 40%;
+  max-width: 250px;
+  border-radius: 10px;
+  display: block;
+  margin: 10px auto;
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #e3f3ff;
+  padding: 1em;
+  font-size: 0.9em;
+  margin-top: 2em;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+  .gallery img, .staff-card {
+    width: 90%;
+  }
+  nav li {
+    display: block;
+    margin: 0.5em 0;
+  }
+}
